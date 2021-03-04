@@ -382,7 +382,8 @@ G.create = function(gconf) {
             packageAgent: packageAgent,
             notify: greenlock._notify,
             debug: greenlock._defaults.debug || args.debug,
-            skipChallengeTest: gconf.skipChallengeTest
+            skipChallengeTest: gconf.skipChallengeTest,
+            skipDryRun: gconf.skipDryRun,
         });
 
         var dir = caches[dirUrl];
